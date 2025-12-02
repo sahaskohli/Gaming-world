@@ -1,125 +1,52 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Gaming-world — Gaming Portal</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <meta name="description" content="Gaming-world — a clean, responsive gaming portal homepage template.">
-  <style>
-    :root{--bg:#0f1724;--card:#0b1220;--accent:#6ee7b7;--muted:#9aa7b2;--glass:rgba(255,255,255,0.04)}
-    *{box-sizing:border-box}
-    html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;color:#e6eef3;background:linear-gradient(180deg,#071224 0%, #07162a 60%);}
-    .container{max-width:1100px;margin:36px auto;padding:24px}
-    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
-    .brand{display:flex;align-items:center;gap:12px}
-    .logo{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,#06b6d4,#7c3aed);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
-    nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-weight:600}
-    .hero{display:grid;grid-template-columns:1fr 360px;gap:24px;margin-top:28px;align-items:start}
-    .hero-card{background:var(--card);padding:22px;border-radius:14px;box-shadow:0 6px 30px rgba(2,6,23,0.6);backdrop-filter:blur(6px)}
-    h1{margin:0;font-size:28px;color:#fff}
-    p.lead{color:var(--muted);margin-top:10px}
-    .search{display:flex;gap:10px;margin-top:16px}
-    .search input{flex:1;padding:10px 12px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:#eaf6f0}
-    .btn{background:var(--accent);border:none;padding:10px 14px;border-radius:10px;color:#052018;font-weight:700;cursor:pointer}
-    .featured{margin-top:22px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-    .game{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));padding:14px;border-radius:12px;color:#dff7ef}
-    .game img{width:100%;height:140px;object-fit:cover;border-radius:8px}
-    .game a{color:#6ee7b7;font-weight:700;text-decoration:none}
-    .meta{display:flex;justify-content:space-between;align-items:center;margin-top:8px}
-    .tag{font-size:12px;color:var(--muted);background:var(--glass);padding:6px 8px;border-radius:8px}
-    aside.card{background:var(--card);padding:18px;border-radius:14px;color:#cfeee5}
-    .stats{display:flex;gap:12px;justify-content:space-between;margin-top:10px}
-    .stat{background:rgba(255,255,255,0.03);padding:10px;border-radius:10px;text-align:center;flex:1}
-    footer{margin-top:36px;color:var(--muted);text-align:center;padding:20px}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming World</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: #fff;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #00eaff;
+        }
+        a {
+            display: inline-block;
+            margin: 20px;
+            padding: 12px 20px;
+            text-decoration: none;
+            color: #000;
+            background-color: #00eaff;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        a:hover {
+            background-color: #0099cc;
+        }
+    </style>
 </head>
+
 <body>
-  <div class="container">
-    <header>
-      <div class="brand">
-        <div class="logo">GW</div>
-        <div>
-          <div style="font-weight:700;color:#fff">Gaming-world</div>
-          <div style="font-size:12px;color:var(--muted)">Your gateway to web games</div>
-        </div>
-      </div>
-      <nav aria-label="Main navigation">
-        <a href="#">Home</a>
-        <a href="#games">Games</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
+    <h1>Welcome to Gaming World 🎮</h1>
+    <p>Explore games hosted on cloud platforms!</p>
 
-    <main class="hero">
-      <section class="hero-card">
-        <h1>Play. Compete. Level up — all in one place.</h1>
-        <p class="lead">Gaming-world is a fast gaming portal with featured indie games, tournaments, and community leaderboards.</p>
+    <a href="https://1530cab5-b9b5-4bdf-9ae6-2a4af5bd5ce0-00-3nw52nsqhs1cy.sisko.replit.dev/" target="_blank">
+        Play Cloud Game
+    </a>
 
-        <div class="search" role="search">
-          <input id="searchInput" placeholder="Search games or tags..." aria-label="Search games">
-          <button class="btn" id="searchBtn">Search</button>
-        </div>
+    <a href="https://github.com/sahaskohli/Gaming-world" target="_blank">
+        View GitHub Repository
+    </a>
 
-        <div class="featured" id="games">
-
-          <article class="game">
-            <img src="https://images.unsplash.com/photo-1605902711622-cfb43c44367d?q=80&w=800" alt="">
-            <h3>Skybound Runner</h3>
-            <div class="meta"><span class="tag">Platformer</span><span><a href="#">Play</a></span></div>
-          </article>
-
-          <article class="game">
-            <img src="https://images.unsplash.com/photo-1603780194369-0e4f6d9c9e8b?q=80&w=800" alt="">
-            <h3>Mystic Blocks</h3>
-            <div class="meta"><span class="tag">Puzzle</span><span><a href="#">Play</a></span></div>
-          </article>
-
-          <article class="game">
-            <img src="https://images.unsplash.com/photo-1606813902896-5d8f4fe0b6b3?q=80&w=800" alt="">
-            <h3>Turbo Drift</h3>
-            <div class="meta"><span class="tag">Racing</span><span><a href="#">Play</a></span></div>
-          </article>
-
-        </div>
-
-        <!-- 🔥 NEW: CLOUD GAME LINK ADDED HERE -->
-        <div style="margin-top:22px;background:rgba(255,255,255,0.05);padding:14px;border-radius:12px;">
-          <h2 style="margin:0;color:#6ee7b7">⭐ Cloud Game</h2>
-          <p style="color:#9aa7b2;margin:6px 0">Play your cloud-hosted game here:</p>
-          <a href="https://simple-cloud-game--sahas23bcg10124.replit.app" target="_blank" style="color:#6ee7b7;font-weight:700;font-size:16px">
-            ▶ Play Simple Cloud Game
-          </a>
-        </div>
-
-      </section>
-
-      <aside class="card">
-        <h3 style="margin:0">Quick Stats</h3>
-        <p style="color:var(--muted);margin-top:8px">Active players this week</p>
-        <div class="stats">
-          <div class="stat"><div style="font-size:18px;font-weight:700">1.2K</div><div style="font-size:12px;color:var(--muted)">Players</div></div>
-          <div class="stat"><div style="font-size:18px;font-weight:700">24</div><div style="font-size:12px;color:var(--muted)">Games</div></div>
-          <div class="stat"><div style="font-size:18px;font-weight:700">3</div><div style="font-size:12px;color:var(--muted)">Tournaments</div></div>
-        </div>
-      </aside>
-    </main>
-
-    <footer>
-      <div>© 2025 Gaming-world • Built by Sahas</div>
-    </footer>
-  </div>
-
-  <script>
-    document.getElementById('searchBtn').addEventListener('click', function(){
-      const q = document.getElementById('searchInput').value.trim().toLowerCase();
-      if(!q){ alert('Try searching for "platformer" or "racing"'); return; }
-      alert('Search demo: ' + q);
-    });
-  </script>
+    <a href="https://github.com/sahaskohli/Gaming-world/settings/access" target="_blank">
+        Manage Access
+    </a>
 </body>
 </html>
 
